@@ -45,6 +45,7 @@ class Twitter {
     this.elements.modal.forEach(this.handlerModal, this);
     this.elements.tweetElems.forEach(this.addTweet, this);
     this.elements.listElem.addEventListener("click", this.handlerTweet);
+    this.elements.sortElem.addEventListener("click", this.changeSort);
     this.elements.showLikedPostElem.addEventListener(
       "click",
       this.showLikedPost
